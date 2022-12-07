@@ -1,0 +1,26 @@
+.footer {
+    @extend .header;
+    display: flex;
+    flex-wrap: wrap;  
+    margin-bottom: 1em;
+    &__nav{
+        flex: 0 0 70%;
+        padding-bottom: 1rem;
+        padding-left: -1rem;
+        display: flex;
+        justify-content: flex-start;
+    }
+    &__socail-icons {
+        flex: 0 0 30%;
+        display: flex;
+        justify-content: flex-end;
+        a{
+            padding-left: 15px;
+            color: white;
+        }
+    }
+    &__heading {
+        flex: 0 0 100%;
+        padding-left: 1rem;
+    }
+}

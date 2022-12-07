@@ -1,0 +1,89 @@
+@import '../shared/_variables.scss';
+@import '../shared/inheritance/_mixins.scss';
+
+.subscribe-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  &__div__h1 {
+    font-size: map-get($font-size, xx-large);
+    line-height: 2;
+  }
+  &__expand-line:hover {
+    height: 1px;
+    width: 100px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 5rem;
+    animation-name: stretch;
+    animation-duration: 2.5s; 
+    animation-timing-function: ease-in-out; 
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    margin: 0 auto;
+  }
+    @keyframes stretch {
+        0% {
+        transform: scaleY(1);
+        background-color: #ccc;
+        }
+        50% {
+          transform: scaleY(2);
+          background-color: #ccc;
+          }
+  
+        100% {
+        background-color: #ccc;
+        }
+    }
+  input[type="email"] {
+    background: transparent;
+    border: none;
+    width:100%;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    height: 40px;
+    text-align: center;
+    }
+  &__typing {
+  font-size: 18px;
+  list-style-type: none;
+  margin-left: 35%;
+  position: relative;
+  width: max-content;
+  }
+}
+//creating new subcribe_section for typewriter animation only.
+.subscribe-section__typing::before,
+.subscribe-section__typing::after {
+  content: '';
+  position: absolute;
+  height: 1.5rem;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.subscribe-section__typing::before {
+  background-color: $primary-color;
+  animation: typewriter 3s steps(35) alternate infinite;
+}
+.subscribe-section__typing::after {
+  width: .125rem;
+  background-color: rgb(255, 255, 255);
+  animation: typewriter 3s steps(35) alternate infinite, blink 500ms steps(35) infinite;
+}
+@keyframes typewriter {
+  to {
+    left: 104%;
+  }
+}
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}

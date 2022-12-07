@@ -1,0 +1,54 @@
+@import '../shared/_variables.scss';
+
+  .header {
+    padding-bottom: 45px;
+    color: map-get($font-color, light-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    &__maido {
+      font-weight: map-get($font-weight, bold);
+      font-size: map-get($font-size, xx-large);
+    }
+    a {
+      color: #FFF;
+      text-decoration: none;
+      display: block;
+    }
+    &__nav {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      &__item {
+      margin-left: 20px;
+      }
+    }
+    &__nav, &__nav__item{
+      display: inline-block;
+      position: relative;
+      :hover:before {
+        content: "";
+        position: absolute;
+        top: -10px;
+        background: rgb(153, 135, 135);
+        width: 5px;
+        height: 5px;
+        border-radius: 100%;
+        left:calc(100% - 8px);
+      }
+    }
+    .active:after {
+      content: "";
+      position: absolute;
+      top: -10px;
+      background: rgb(241, 237, 6);
+      width: 5px;
+      height: 5px;
+      border-radius: 100%;
+      left:calc(100% - 8px);
+    }
+  }
+
+

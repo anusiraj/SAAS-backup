@@ -1,0 +1,93 @@
+@import '../shared/_variables.scss';
+@import '../shared/inheritance/_mixins.scss';
+
+.section1 {
+  .box-h4 {
+    font-weight: map-get($font-weight, regular );
+    font-size: map-get($font-size, small );
+  }
+  .box-h1 {
+    font-weight: map-get($font-weight, bold );
+    font-size: map-get($font-size, x-large );
+  }
+  &__block1:hover {
+    @include section1-animation;
+  }
+  &__block2:hover {
+    @include section1-animation;
+  }
+  &__block3:hover {
+    @include section1-animation;
+  }
+  &__block4:hover {
+    @include section1-animation;
+  }
+  &__block5:hover {
+    @include section1-animation;
+  }
+  display: grid;
+  height: 80vh;
+  grid-template-columns: 40% 1fr 1fr;
+  grid-template-areas: 
+                  "i1 i2 i3"
+                  "i1 i4 i5";
+  gap: 1em;
+  &__block1:nth-child(1) {
+      grid-area: i1;
+      border-radius: $block-border-radius;
+      padding: 1em;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: flex-end;
+      background-image: $section1-image1;
+      background-size: cover;
+    }
+  &__block2:nth-child(2) {
+      background-color: #77ead3;
+      grid-area: i2;
+      border-radius: $block-border-radius;
+      padding: 1em;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: flex-end;
+      background-image: $section1-image2;
+      background-size: cover;
+    }
+  &__block3:nth-child(3) {
+      background-color: #cea613;
+      grid-area: i3;
+      border-radius: $block-border-radius;
+      padding: 1em;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: flex-end;
+    }
+  &__block4:nth-child(4) {
+      background-color: #9c14cd;
+      grid-area: i4;
+      border-radius: $block-border-radius;
+      padding: 1em;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: flex-end;
+      background-image: $section1-image4;
+      background-size: cover;
+    }
+  &__block5:nth-child(5) {
+      background-color: #6b5bce;
+      grid-area: i5;
+      border-radius: $block-border-radius;
+      padding: 1em;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: flex-end;
+      background-image: $section1-image5;
+      background-size: cover;
+    }
+}
+    

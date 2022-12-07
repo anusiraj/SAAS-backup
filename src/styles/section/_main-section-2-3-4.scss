@@ -1,0 +1,147 @@
+@import '../shared/inheritance/_mixins.scss';
+
+.section2 {
+  @include section2-3-4;
+  @include arrow; 
+  background-image: $section2-image1;
+  background-size: cover;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+.sec2 {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.sec2:hover .section2,
+.sec2:focus .section2 {
+  -ms-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.sec2:hover .section2:before, .sec2:focus .section2:before {
+  display: block;
+}
+.right {float: right !important;}
+  
+.sec2:hover, .sec2:focus {
+  display: block;
+  height: 70vh;
+}
+
+.section2:before {
+  content: "";
+  display: none;
+  // height: 100%;
+  // width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.section3 {
+  @include section2-3-4;
+  @include arrow;
+  background-image: $section3-image1;
+  background-size: cover;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+  &__block1__line {
+  margin-top: 1em;
+  width: 30px;
+  }
+  p {
+    line-height: 2;
+  }
+}
+.sec3 {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.sec3:hover .section3,
+.sec3:focus .section3 {
+  -ms-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.sec3:hover .section3:before, .sec3:focus .section3:before {
+  display: block;
+}
+.right {float: right !important;}
+  
+.sec3:hover, .sec3:focus {
+  display: block;
+  height: 70vh;
+}
+
+.section3:before {
+  content: "";
+  display: none;
+  // height: 100%;
+  // width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.section4 {
+  @include section2-3-4;
+  @include arrow;
+  background-image: $section4-image1;
+  background-size: cover;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+} 
+.sec4 {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.sec4:hover .section4,
+.sec4:focus .section4 {
+  -ms-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.sec4:hover .section4:before, .sec4:focus .section4:before {
+  display: block;
+}
+.right {float: right !important;}
+  
+.sec4:hover, .sec4:focus {
+  display: block;
+  height: 70vh;
+}
+
+.sectio4:before {
+  content: "";
+  display: none;
+  // height: 100%;
+  // width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

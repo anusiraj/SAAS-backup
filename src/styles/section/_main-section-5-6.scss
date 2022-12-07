@@ -1,0 +1,111 @@
+@import '../shared/_variables.scss';
+@import '../shared/inheritance/_mixins.scss';
+
+.section5 {
+    display: flex;
+    height: 60vh;
+    gap: 1em;
+    margin-top: 2rem;
+    &__block1 {
+      @include arrow;
+      flex: 1;
+      background-color: #6b5bce;
+      border-radius: $block-border-radius;
+      padding: 4rem; 
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      background-image: $section5-image1;
+      background-size: cover;
+      .box-h1 {
+        font-size: 44px;
+        line-height: 1;
+      }
+      .box-h4 {
+          line-height: 4;
+      }
+      p {
+        line-height: 1.5;
+      }
+    }
+    &__block2 {
+      @include arrow;
+      flex: 1;
+      background-color: #ce5b93;
+      border-radius: $block-border-radius;
+      padding: 4rem; 
+      display: flex;
+      flex-direction: column;
+      align-content:flex-start;
+      background-image: $section5-image2;
+      background-size: cover;
+      .box-h1 {
+        font-size: 44px;
+        line-height: 1;
+      }
+      .box-h4 {
+          line-height: 4;
+      }
+    }
+}
+.section6 {
+  display: flex;
+  height: 60vh;
+  gap: 1em;
+  margin-top: 2rem;
+  &__block1 {
+    @include arrow;
+    flex: 1;
+    background-color: #6b5bce;
+    border-radius: $block-border-radius;
+    padding: 1rem 4rem; 
+    padding-top: 3rem;
+    background-image: $section6-image1;
+    background-size: cover;
+    .box-h1 {
+      font-size: 24px;
+      line-height: 1;
+    }
+    .box-h4 {
+        line-height: 4;
+    }
+  }
+  &__block2 {
+    @include arrow;
+    flex: 1;
+    background-color: #ce5b93;
+    border-radius: $block-border-radius;
+    padding: 1rem 4rem; 
+    padding-top: 3rem;
+    background-image: $section6-image2;
+    background-size: cover;
+    .box-h1 {
+      font-size: 24px;
+      line-height: 1;
+    }
+    .box-h4 {
+        line-height: 4;
+    }
+    p {
+      line-height: 1.5;
+    }
+  }
+  &__block3 {
+    @include arrow;
+    flex: 1;
+    background-color: #ce5b93;
+    border-radius: $block-border-radius;
+    padding: 1rem 4rem; 
+    padding-top: 3rem;
+    background-image: $section6-image3;
+    background-size: cover;
+    .box-h1 {
+      font-size: 24px;
+      line-height: 1;
+    }
+    .box-h4 {
+        line-height: 4;
+    }
+  }
+}

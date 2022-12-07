@@ -1,0 +1,37 @@
+@import 'shared/_variables.scss';
+@import 'shared/inheritance/_extends.scss';
+
+@import 'section/_header.scss';
+@import 'section/_main-section1.scss';
+@import 'section/_main-section-2-3-4.scss';
+@import 'section/_main-section-5-6.scss';
+@import 'section/_main-subscribe-section.scss';
+@import 'section/_footer.scss';
+
+body {
+  background: $primary-color;
+  color:white;
+  margin: 4rem 4rem;
+  line-height: $h1h2-line-height;
+}
+main {
+  .heading-between-section {
+    margin-top: 3rem;
+    text-align: center;
+  }
+  .fixed-side-header{
+    writing-mode:vertical-rl;
+    transform: rotate(180deg);
+    position: fixed;
+    margin-left: -3rem;
+    margin-top: 2.5rem;
+  }
+}
+
+
+
+
+
+
+ 
+
